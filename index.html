@@ -18,11 +18,155 @@
 
     <!-- DaisyUI Theme -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+
+    <!-- Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        mainColor: '#B68C5A',
+                        whiteText: '#FFFFFF',
+                        grayText: '#707070',
+                    }
+                }
+            }
+        }
+    </script>
 </head>
 
 <body>
     <!-- Header Section -->
-    <header></header>
+    <header>
+        <!-- Nav Section -->
+        <nav class="top-navbar container mx-auto">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                            <li><a class="nav-button text-grayText">Home</a></li>
+                            <li>
+                                <details>
+                                    <summary class="text-grayText">Services</summary>
+                                    <ul class="p-2">
+                                        <li><a class="nav-button text-grayText">Service 1</a></li>
+                                        <li><a class="nav-button text-grayText">Service 2</a></li>
+                                    </ul>
+                                </details>
+                            </li>
+                            <li>
+                                <details>
+                                    <summary class="text-grayText">Cases</summary>
+                                    <ul class="p-2">
+                                        <li><a class="nav-button text-grayText">Case 1</a></li>
+                                        <li><a class="nav-button text-grayText">Case 2</a></li>
+                                    </ul>
+                                </details>
+                            </li>
+                            <li>
+                                <details>
+                                    <summary class="text-grayText">Blogs</summary>
+                                    <ul class="p-2">
+                                        <li><a class="nav-button text-grayText">Blog 1</a></li>
+                                        <li><a class="nav-button text-grayText">Blog 2</a></li>
+                                    </ul>
+                                </details>
+                            </li>
+                            <li>
+                                <details>
+                                    <summary class="text-grayText">Contact Us</summary>
+                                    <ul class="p-2">
+                                        <li><a class="nav-button text-grayText">Facebook</a></li>
+                                        <li><a class="nav-button text-grayText">Github</a></li>
+                                        <li><a class="nav-button text-grayText">Linkedin</a></li>
+                                    </ul>
+                                </details>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="logo">
+                        <img src="./assets/images/justice-logo-2.png" alt="">
+                    </div>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a class="nav-button text-grayText">Home</a></li>
+                        <li>
+                            <details>
+                                <summary class="text-grayText">Services</summary>
+                                <ul class="p-2">
+                                    <li><a class="nav-button text-grayText">Service 1</a></li>
+                                    <li><a class="nav-button text-grayText">Service 2</a></li>
+                                </ul>
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary class="text-grayText">Cases</summary>
+                                <ul class="p-2">
+                                    <li><a class="nav-button text-grayText">Case 1</a></li>
+                                    <li><a class="nav-button text-grayText">Case 2</a></li>
+                                </ul>
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary class="text-grayText">Blogs</summary>
+                                <ul class="p-2">
+                                    <li><a class="nav-button text-grayText">Blog 1</a></li>
+                                    <li><a class="nav-button text-grayText">Blog 2</a></li>
+                                </ul>
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary class="text-grayText">Contact Us</summary>
+                                <ul class="p-2">
+                                    <li><a class="nav-button text-grayText">Facebook</a></li>
+                                    <li><a class="nav-button text-grayText">Github</a></li>
+                                    <li><a class="nav-button text-grayText">Linkedin</a></li>
+                                </ul>
+                            </details>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a class="btn bg-mainColor text-whiteText text-base">Free Consultation</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="hero-section container mx-auto mt-10">
+            <div class="hero rounded-xl"
+                style="background-image: url(./assets/images/banner.png);">
+                <div class="hero-overlay rounded-xl"></div>
+                <div class="hero-content text-neutral-content text-center">
+                    <div class="max-w-md">
+                        <h1 class="mb-5 text-5xl font-bold lg:text-6xl">We Provide Effective Legal Solutions</h1>
+                        <p class="hero-description font-light mb-5">
+                            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.
+                        </p>
+                        <div class="search-btn flex items-center justify-between">
+                            <form action="">
+                                <input class="bg-white rounded-xl pl-5 text-black" type="text" name="" id="" placeholder="Search Your Services">
+                            </form>
+                            <button class="btn btn-primary bg-mainColor px-10 py-8 rounded-xl">Search</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
 
     <!-- Main Section -->
     <main></main>
