@@ -28,12 +28,18 @@ li .nav-button {
 }
 .search-btn > form > input {
     height: 64px;
-    width: 300px;
+    width: 400px;
     font-family: "Poppins", sans-serif;
 }
 .search-btn button {
     font-family: "Poppins", sans-serif;
 }
 .hero-description {
+    font-family: "Poppins", sans-serif;
+}
+.practice-description {
+    font-family: "Poppins", sans-serif;
+}
+.practice-card-description {
     font-family: "Poppins", sans-serif;
 }
